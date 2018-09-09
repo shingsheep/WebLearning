@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--在数组 arr 末尾添加元素 item。不要直接修改数组 arr，结果返回新的数组-->
+<script>
+    //不能直接复制，引用地址原数组会改变
+    function append(arr, item) {
+
+        return arr.concat(item);
+    }
+    function append2(arr, item) {
+        //或者for循环拷贝
+        var newArr=arr.slice(0);
+        newArr.push(item);
+        return newArr;
+    }
+
+
+</script>
+</body>
+</html>

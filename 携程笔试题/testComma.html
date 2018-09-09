@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function isPrimeNum(num){
+            for (var i = 2; i < num/2+1; i++) {
+                if (num%i==0){
+                    return false;
+                }
+            };
+            return true;
+        }
+        var nber = parseInt(readline());
+        var arr=new Array(n);
+        arr[0]=0;
+        var sum=0;
+        if(n>=1) {
+            for (var i = 1; i < n; i++) {
+                arr[i] = 2 * i - 1;
+                if (isPrimeNum(arr[i])) {
+                    sum += arr[i];
+                }
+            }
+            print(sum);
+        }else{
+            print(0);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

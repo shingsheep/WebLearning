@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function remove(arr, item) {
+        var len=arr.length;
+        for(var i=0;i<len;i++){
+            if(arr[i]==item){
+                arr.splice(i,1);
+            }
+        }
+        return arr;
+    }
+    function remove1(arr, item) {
+        var newArr=arr.filter(function(element){
+            return element!=item;
+        })
+        return newArr;
+    }
+    function remove3(arr, item) {
+        var array=[];
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]!=item){
+                array.push(arr[i]);
+            }
+        }
+        return array;
+    }
+    console.log(remove1([1,2,3,2,4,2],2));
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var isEven = function(x) {
+        console.log(x);
+        return ( x % 2==0 ) ? true : false;
+    }
+    var numbers=[1,2,3,4,5];
+   // numbers.every(isEven);
+   // numbers.some(isEven);
+    var newMap=numbers.map(isEven);
+    var evenNumbers=numbers.filter(isEven);
+
+    var test=numbers.reduce(function(previous,current,index){
+        return previous + current;
+    });
+
+    numbers.
+    console.log(test);
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //不对
+    function remove(arr, item) {
+        arr.filter(function(element){
+            return element!=item;
+        })
+        return arr;
+    }
+    function remove1(arr,item){
+        for(var i in arr){
+            while(arr[i]==item){
+                arr.splice(i,1);
+            }
+        }
+        return arr;
+    }
+    console.log(remove([1,2,4,3,2],2))
+</script>
+</body>
+</html>
